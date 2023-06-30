@@ -1,0 +1,123 @@
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 18px 20px;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #00bcff;
+  background-image: linear-gradient(180deg, #00bcff 0%, #9599E2 100%);
+}
+
+.vertical-line {
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  margin: 0 10px;
+  align-self: center;
+}
+
+.button-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+}
+
+.button-container a .button-icon {
+  margin-right: 7px;
+  align-items: left;
+}
+
+.description {
+  margin-top: px;
+  color: white;
+}
+
+.horizontal-line {
+  width: 112%;
+  margin: 0 auto;
+  border: none;
+  border-top: 4px solid black;
+  background-color: black;
+}
+
+.app-container {
+  background-color: #0030cc;
+  background-image: linear-gradient(0deg, #0030cc 0%, #00c7ff 100%);
+}
+
+.container2 {
+  margin-left: 60px;
+  padding: 45px;
+}
+
+.container1 {
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.login {
+  position: relative;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+@media (max-width: 600px) {
+  .container2 {
+    margin-left: 10px;
+    padding: 20px;
+  }
+
+  .container1 {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .button-container {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .custom-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
